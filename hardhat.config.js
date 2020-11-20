@@ -5,7 +5,7 @@ module.exports = {
     version: '0.7.4',
     settings: {
       optimizer: {
-        enabled: true,
+        enabled: !!process.env.FORK,
         runs: 200,
       },
     },
